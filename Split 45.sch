@@ -19,7 +19,7 @@ U 1 1 5E6622CF
 P 2800 3650
 F 0 "U1" H 2800 1761 50  0000 C CNN
 F 1 "ATmega32U4-AU" H 2800 1670 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2800 3650 50  0001 C CIN
+F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.15x5.15mm" H 2800 3650 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2800 3650 50  0001 C CNN
 	1    2800 3650
 	1    0    0    -1  
@@ -462,8 +462,6 @@ Text GLabel 7500 1800 1    50   Input ~ 0
 L_C4
 Text GLabel 8000 1800 1    50   Input ~ 0
 L_C5
-Text GLabel 8500 1800 1    50   Input ~ 0
-L_C6
 Text GLabel 3400 2150 2    50   Input ~ 0
 L_R0
 Text GLabel 3400 2250 2    50   Input ~ 0
@@ -486,15 +484,13 @@ Text GLabel 3400 3750 2    50   Input ~ 0
 L_C4
 Text GLabel 3400 3850 2    50   Input ~ 0
 L_C5
-Text GLabel 3400 3950 2    50   Input ~ 0
-L_C6
 $Comp
 L MCU_Microchip_ATmega:ATmega32U4-AU U2
 U 1 1 5E97DCF7
 P 2750 8850
 F 0 "U2" H 2750 6961 50  0000 C CNN
 F 1 "ATmega32U4-AU" H 2750 6870 50  0000 C CNN
-F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2750 8850 50  0001 C CIN
+F 2 "Package_DFN_QFN:QFN-44-1EP_7x7mm_P0.5mm_EP5.15x5.15mm" H 2750 8850 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 2750 8850 50  0001 C CNN
 	1    2750 8850
 	1    0    0    -1  
@@ -949,8 +945,6 @@ Text GLabel 3350 7550 2    50   Input ~ 0
 R_R2
 Text GLabel 3350 7650 2    50   Input ~ 0
 R_R3
-Text GLabel 3350 7750 2    50   Input ~ 0
-R_R4
 Text GLabel 3350 8550 2    50   Input ~ 0
 R_C0
 Text GLabel 3350 8650 2    50   Input ~ 0
@@ -1115,30 +1109,6 @@ F 3 "~" V 7600 2300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7600 2200 7800 2200
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX_61
-U 1 1 5EA63DA8
-P 7600 10350
-F 0 "MX_61" H 7633 10573 60  0000 C CNN
-F 1 "MX-NoLED" H 7633 10499 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED" H 6975 10325 60  0001 C CNN
-F 3 "" H 6975 10325 60  0001 C CNN
-	1    7600 10350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D_Small D7
-U 1 1 5EA63DAE
-P 7350 10600
-F 0 "D7" V 7396 10532 50  0000 R CNN
-F 1 "D_Small" V 7305 10532 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" V 7350 10600 50  0001 C CNN
-F 3 "~" V 7350 10600 50  0001 C CNN
-	1    7350 10600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7350 10500 7550 10500
 Wire Wire Line
 	8100 2400 7600 2400
 Connection ~ 5100 2400
@@ -1493,17 +1463,6 @@ $EndComp
 Wire Wire Line
 	5100 3450 5500 3450
 $Comp
-L Device:D_Small D21
-U 1 1 5EAC4AB9
-P 5650 4400
-F 0 "D21" V 5696 4332 50  0000 R CNN
-F 1 "D_Small" V 5605 4332 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" V 5650 4400 50  0001 C CNN
-F 3 "~" V 5650 4400 50  0001 C CNN
-	1    5650 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L MX_Alps_Hybrid:MX-NoLED MX_Z1
 U 1 1 5EAC4AC0
 P 6350 4150
@@ -1626,33 +1585,25 @@ Wire Wire Line
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX_IsoSlash1
 U 1 1 5EB3FB32
-P 5150 4150
-F 0 "MX_IsoSlash1" H 5183 4373 60  0000 C CNN
-F 1 "MX-NoLED" H 5183 4299 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED" H 4525 4125 60  0001 C CNN
-F 3 "" H 4525 4125 60  0001 C CNN
-	1    5150 4150
+P 5700 4150
+F 0 "MX_IsoSlash1" H 5733 4373 60  0000 C CNN
+F 1 "MX-NoLED" H 5733 4299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 5075 4125 60  0001 C CNN
+F 3 "" H 5075 4125 60  0001 C CNN
+	1    5700 4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D_Small D20
 U 1 1 5EB403E4
-P 5100 4400
-F 0 "D20" V 5146 4332 50  0000 R CNN
-F 1 "D_Small" V 5055 4332 50  0000 R CNN
-F 2 "Diode_SMD:D_SOD-123" V 5100 4400 50  0001 C CNN
-F 3 "~" V 5100 4400 50  0001 C CNN
-	1    5100 4400
+P 5650 4400
+F 0 "D20" V 5696 4332 50  0000 R CNN
+F 1 "D_Small" V 5605 4332 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 5650 4400 50  0001 C CNN
+F 3 "~" V 5650 4400 50  0001 C CNN
+	1    5650 4400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5300 4100 5300 3850
-Wire Wire Line
-	5300 3850 5500 3850
-Wire Wire Line
-	5600 4350 5600 4300
-Wire Wire Line
-	5600 4300 5650 4300
 Wire Wire Line
 	5100 3600 5050 3600
 Wire Wire Line
@@ -1660,14 +1611,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 3650 4900 3650
 Connection ~ 5100 3600
-Wire Wire Line
-	5000 4500 5100 4500
-Connection ~ 5100 4500
-Wire Wire Line
-	5100 4500 5650 4500
-Connection ~ 5650 4500
-Wire Wire Line
-	5650 4500 6100 4500
 Connection ~ 6100 4500
 Wire Wire Line
 	6100 4500 6600 4500
@@ -1677,9 +1620,6 @@ Wire Wire Line
 Connection ~ 7100 4500
 Wire Wire Line
 	7100 4500 7600 4500
-Connection ~ 7600 4500
-Wire Wire Line
-	7600 4500 8100 4500
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX_LCtrl1
 U 1 1 5EBC1D43
@@ -1783,40 +1723,6 @@ Wire Wire Line
 	5500 3400 5500 3450
 Connection ~ 5500 3450
 Wire Wire Line
-	5500 3450 5500 3850
-Connection ~ 5500 3850
-Wire Wire Line
-	5500 3850 5500 4800
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX_LShift1
-U 1 1 5EC35C41
-P 5850 4150
-F 0 "MX_LShift1" H 5883 4373 60  0000 C CNN
-F 1 "MX-NoLED" H 5883 4299 20  0000 C CNN
-F 2 "MX_Only:MXOnly-2.25U-NoLED" H 5225 4125 60  0001 C CNN
-F 3 "" H 5225 4125 60  0001 C CNN
-	1    5850 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 4300 5650 4300
-Connection ~ 5650 4300
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX_LShift2
-U 1 1 5EC4C956
-P 5500 4200
-F 0 "MX_LShift2" H 5533 4423 60  0000 C CNN
-F 1 "MX-NoLED" H 5533 4349 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1.25U-NoLED" H 4875 4175 60  0001 C CNN
-F 3 "" H 4875 4175 60  0001 C CNN
-	1    5500 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 4150 6000 4150
-Wire Wire Line
-	5600 4350 5450 4350
-Wire Wire Line
 	6000 1800 6000 2000
 Connection ~ 6000 2000
 Wire Wire Line
@@ -1825,14 +1731,6 @@ Connection ~ 6000 2700
 Wire Wire Line
 	6000 2700 6000 3400
 Connection ~ 6000 3400
-Wire Wire Line
-	6000 3400 6000 4100
-Connection ~ 6000 4100
-Wire Wire Line
-	6000 4100 6000 4150
-Connection ~ 6000 4150
-Wire Wire Line
-	6000 4150 6000 4800
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX_LExtra1
 U 1 1 5EC702B3
@@ -1951,13 +1849,11 @@ Connection ~ 8000 2700
 Wire Wire Line
 	8000 2700 8000 3400
 Connection ~ 8000 3400
-Wire Wire Line
-	8000 3400 8000 4100
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX_71
+L MX_Alps_Hybrid:MX-NoLED MX_61
 U 1 1 5ECF84FC
 P 5300 7250
-F 0 "MX_71" H 5333 7473 60  0000 C CNN
+F 0 "MX_61" H 5333 7473 60  0000 C CNN
 F 1 "MX-NoLED" H 5333 7399 20  0000 C CNN
 F 2 "MX_Only:MXOnly-1U-NoLED" H 4675 7225 60  0001 C CNN
 F 3 "" H 4675 7225 60  0001 C CNN
@@ -1978,10 +1874,10 @@ $EndComp
 Wire Wire Line
 	5050 7400 5250 7400
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX_81
+L MX_Alps_Hybrid:MX-NoLED MX_71
 U 1 1 5ECF850A
 P 5800 7250
-F 0 "MX_81" H 5833 7473 60  0000 C CNN
+F 0 "MX_71" H 5833 7473 60  0000 C CNN
 F 1 "MX-NoLED" H 5833 7399 20  0000 C CNN
 F 2 "MX_Only:MXOnly-1U-NoLED" H 5175 7225 60  0001 C CNN
 F 3 "" H 5175 7225 60  0001 C CNN
@@ -2002,10 +1898,10 @@ $EndComp
 Wire Wire Line
 	5550 7400 5750 7400
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX_91
+L MX_Alps_Hybrid:MX-NoLED MX_81
 U 1 1 5ECF8517
 P 6300 7250
-F 0 "MX_91" H 6333 7473 60  0000 C CNN
+F 0 "MX_81" H 6333 7473 60  0000 C CNN
 F 1 "MX-NoLED" H 6333 7399 20  0000 C CNN
 F 2 "MX_Only:MXOnly-1U-NoLED" H 5675 7225 60  0001 C CNN
 F 3 "" H 5675 7225 60  0001 C CNN
@@ -2026,10 +1922,10 @@ $EndComp
 Wire Wire Line
 	6050 7400 6250 7400
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX_Zero1
+L MX_Alps_Hybrid:MX-NoLED MX_91
 U 1 1 5ECF8524
 P 6800 7250
-F 0 "MX_Zero1" H 6833 7473 60  0000 C CNN
+F 0 "MX_91" H 6833 7473 60  0000 C CNN
 F 1 "MX-NoLED" H 6833 7399 20  0000 C CNN
 F 2 "MX_Only:MXOnly-1U-NoLED" H 6175 7225 60  0001 C CNN
 F 3 "" H 6175 7225 60  0001 C CNN
@@ -2050,10 +1946,10 @@ $EndComp
 Wire Wire Line
 	6550 7400 6750 7400
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX_Minus1
+L MX_Alps_Hybrid:MX-NoLED MX_Zero1
 U 1 1 5ECF8531
 P 7300 7250
-F 0 "MX_Minus1" H 7333 7473 60  0000 C CNN
+F 0 "MX_Zero1" H 7333 7473 60  0000 C CNN
 F 1 "MX-NoLED" H 7333 7399 20  0000 C CNN
 F 2 "MX_Only:MXOnly-1U-NoLED" H 6675 7225 60  0001 C CNN
 F 3 "" H 6675 7225 60  0001 C CNN
@@ -2074,10 +1970,10 @@ $EndComp
 Wire Wire Line
 	7050 7400 7250 7400
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX_Plus1
+L MX_Alps_Hybrid:MX-NoLED MX_Minus1
 U 1 1 5ECF853E
 P 7800 7250
-F 0 "MX_Plus1" H 7833 7473 60  0000 C CNN
+F 0 "MX_Minus1" H 7833 7473 60  0000 C CNN
 F 1 "MX-NoLED" H 7833 7399 20  0000 C CNN
 F 2 "MX_Only:MXOnly-1U-NoLED" H 7175 7225 60  0001 C CNN
 F 3 "" H 7175 7225 60  0001 C CNN
@@ -2097,17 +1993,6 @@ F 3 "~" V 7550 7500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7550 7400 7750 7400
-$Comp
-L MX_Alps_Hybrid:MX-NoLED MX_Bksp1
-U 1 1 5ECF854B
-P 8300 7250
-F 0 "MX_Bksp1" H 8333 7473 60  0000 C CNN
-F 1 "MX-NoLED" H 8333 7399 20  0000 C CNN
-F 2 "MX_Only:MXOnly-2U-NoLED" H 7675 7225 60  0001 C CNN
-F 3 "" H 7675 7225 60  0001 C CNN
-	1    8300 7250
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D_Small D37
 U 1 1 5ECF8551
@@ -2386,8 +2271,6 @@ Wire Wire Line
 	8550 8100 8750 8100
 Wire Wire Line
 	8050 8100 8250 8100
-Wire Wire Line
-	8550 8300 8050 8300
 Connection ~ 5050 8300
 Wire Wire Line
 	5050 8300 4950 8300
@@ -2406,7 +2289,6 @@ Wire Wire Line
 Connection ~ 7550 8300
 Wire Wire Line
 	7550 8300 7050 8300
-Connection ~ 8050 8300
 Wire Wire Line
 	8050 8300 7550 8300
 $Comp
@@ -2601,8 +2483,6 @@ Wire Wire Line
 	8550 8800 8750 8800
 Wire Wire Line
 	8050 8800 8250 8800
-Wire Wire Line
-	8550 9000 8050 9000
 Connection ~ 5050 9000
 Wire Wire Line
 	5050 9000 4950 9000
@@ -2621,7 +2501,6 @@ Wire Wire Line
 Connection ~ 7550 9000
 Wire Wire Line
 	7550 9000 7050 9000
-Connection ~ 8050 9000
 Wire Wire Line
 	8050 9000 7550 9000
 $Comp
@@ -3081,15 +2960,34 @@ F 3 "~" V 8550 9600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8550 9700 7550 9700
-Connection ~ 7550 9700
-Wire Wire Line
 	8750 9500 8550 9500
 Wire Wire Line
 	8950 8850 8950 9300
 Connection ~ 8950 8850
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_Plus1
+U 1 1 5EA63DA8
+P 7600 10350
+F 0 "MX_Plus1" H 7633 10573 60  0000 C CNN
+F 1 "MX-NoLED" H 7633 10499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 6975 10325 60  0001 C CNN
+F 3 "" H 6975 10325 60  0001 C CNN
+	1    7600 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Small D7
+U 1 1 5EA63DAE
+P 7350 10600
+F 0 "D7" V 7396 10532 50  0000 R CNN
+F 1 "D_Small" V 7305 10532 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 7350 10600 50  0001 C CNN
+F 3 "~" V 7350 10600 50  0001 C CNN
+	1    7350 10600
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	8500 1800 8500 4100
+	7350 10500 7550 10500
 Wire Wire Line
 	7750 10300 7850 10300
 Wire Wire Line
@@ -3098,12 +2996,124 @@ Wire Wire Line
 	7850 10050 7400 10050
 Wire Wire Line
 	7400 10050 7400 10250
-Wire Wire Line
-	7400 10250 7300 10250
 Connection ~ 7300 10250
 Wire Wire Line
-	7350 10700 6550 10700
+	7400 10250 7300 10250
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_Bksp1
+U 1 1 5ECF854B
+P 8300 7250
+F 0 "MX_Bksp1" H 8333 7473 60  0000 C CNN
+F 1 "MX-NoLED" H 8333 7399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-2U-NoLED" H 7675 7225 60  0001 C CNN
+F 3 "" H 7675 7225 60  0001 C CNN
+	1    8300 7250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6550 10700 6550 10400
-Connection ~ 6550 10400
+	5500 3450 5500 4100
+Wire Wire Line
+	5000 4500 5150 4500
+Wire Wire Line
+	5100 4350 4950 4350
+Wire Wire Line
+	5150 4150 5500 4150
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_LShift2
+U 1 1 5EC4C956
+P 5000 4200
+F 0 "MX_LShift2" H 5033 4423 60  0000 C CNN
+F 1 "MX-NoLED" H 5033 4349 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1.25U-NoLED" H 4375 4175 60  0001 C CNN
+F 3 "" H 4375 4175 60  0001 C CNN
+	1    5000 4200
+	1    0    0    -1  
+$EndComp
+Connection ~ 5150 4300
+Wire Wire Line
+	5300 4300 5150 4300
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX_LShift1
+U 1 1 5EC35C41
+P 5350 4150
+F 0 "MX_LShift1" H 5383 4373 60  0000 C CNN
+F 1 "MX-NoLED" H 5383 4299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-2.25U-NoLED" H 4725 4125 60  0001 C CNN
+F 3 "" H 4725 4125 60  0001 C CNN
+	1    5350 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4300 5150 4300
+Wire Wire Line
+	5100 4350 5100 4300
+$Comp
+L Device:D_Small D21
+U 1 1 5EAC4AB9
+P 5150 4400
+F 0 "D21" V 5196 4332 50  0000 R CNN
+F 1 "D_Small" V 5105 4332 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" V 5150 4400 50  0001 C CNN
+F 3 "~" V 5150 4400 50  0001 C CNN
+	1    5150 4400
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5150 4500
+Connection ~ 5500 4100
+Wire Wire Line
+	5500 4100 5500 4150
+Connection ~ 5500 4150
+Wire Wire Line
+	5500 4150 5500 4800
+Wire Wire Line
+	6000 3400 6000 4100
+Wire Wire Line
+	5150 4500 5650 4500
+Connection ~ 5650 4500
+Wire Wire Line
+	5650 4500 6100 4500
+Wire Wire Line
+	5850 4100 6000 4100
+Connection ~ 6000 4100
+Wire Wire Line
+	6000 4100 6000 4800
+Wire Wire Line
+	7000 1800 7000 2000
+Connection ~ 7000 2000
+Wire Wire Line
+	7000 2000 7000 2700
+Connection ~ 7000 2700
+Wire Wire Line
+	7000 2700 7000 3400
+Connection ~ 7000 3400
+Wire Wire Line
+	7000 3400 7000 4100
+Wire Wire Line
+	8100 4500 8100 5250
+Wire Wire Line
+	8100 5250 7100 5250
+Wire Wire Line
+	7100 5250 7100 5200
+Connection ~ 7100 5200
+Wire Wire Line
+	8500 4100 8600 4100
+Wire Wire Line
+	8600 4100 8600 3850
+Wire Wire Line
+	8600 3850 8000 3850
+Wire Wire Line
+	8000 3400 8000 3850
+Wire Wire Line
+	8000 3850 8000 4100
+Connection ~ 8000 3850
+Text GLabel 8550 9700 3    50   Input ~ 0
+R_R4
+Text GLabel 8550 9000 3    50   Input ~ 0
+R_R3
+Text GLabel 8550 8300 2    50   Input ~ 0
+R_R2
+Text GLabel 7350 10700 3    50   Input ~ 0
+R_R1
+Text GLabel 3350 8050 2    50   Input ~ 0
+R_R4
 $EndSCHEMATC
