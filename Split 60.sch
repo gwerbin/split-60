@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Split 45-cache
+LIBS:Split 60-cache
 EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
@@ -2913,8 +2913,6 @@ Text GLabel 3350 8350 2    50   Input ~ 0
 R_C6
 Text GLabel 3350 8250 2    50   Input ~ 0
 R_C5
-Text GLabel 3350 7850 2    50   Input ~ 0
-R_R0
 Text GLabel 3350 9750 2    50   Input ~ 0
 R_C4
 Text GLabel 3350 9850 2    50   Input ~ 0
@@ -3140,10 +3138,8 @@ Connection ~ 4550 6600
 NoConn ~ 3350 8750
 NoConn ~ 3350 8850
 NoConn ~ 3350 9050
-Text GLabel 3350 7750 2    50   Input ~ 0
-R_R1
 Text GLabel 3350 9250 2    50   Input ~ 0
-R_R2
+R_R1
 Text GLabel 10700 6950 1    50   Input ~ 0
 R_C6
 $Comp
@@ -3263,6 +3259,10 @@ Connection ~ 8800 10350
 NoConn ~ 3350 10250
 Text GLabel 3350 8950 2    50   Input ~ 0
 R_R4
-Text GLabel 3350 9150 2    50   Input ~ 0
+Text GLabel 3350 7850 2    50   Input ~ 0
 R_R3
+Text GLabel 3350 9150 2    50   Input ~ 0
+R_R0
+Text GLabel 3350 7750 2    50   Input ~ 0
+R_R2
 $EndSCHEMATC
